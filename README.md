@@ -1,7 +1,7 @@
 # Goal Keeper 
 
 ## Description
-Goal keeper is a web app that motivates and tracks wealth (cryptocurrency) towards the user's self wealth goals. 
+SaikangWarrior is a "service Ecommerce"
 
 ## Technical Used
 Technologies implemented in this project are as followed :
@@ -20,9 +20,15 @@ If the user is looking to earn some money, he can look for available requests li
 the service completed, the transaction ends.
 
 
-## Wireframes
-![](Screenshot3.png)
+## WalkThrough
+
 ![](Screenshot4.png)
+User will first land on the welcome page and have an understanding how the app works.
+
+
+
+![](Screenshot3.png)
+
 
 ## Planning and Development Process
 Went through multiple brainstorm and finalized on this idea. The UI/UX design was not properly thought out before execution, prototyping if the function works come first before the design.
