@@ -1,0 +1,114 @@
+.taskPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+    .background{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-image: url("/image/86282.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position-y: -150px;
+        z-index: -1;
+        }
+    .card_container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        width: 80%;
+        gap: 15px;
+        .request_card{
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+            border-radius: 15px;
+            text-align: left;
+            height:300px;
+            overflow: hidden;
+            backdrop-filter: blur(6px);
+            overflow: hidden;
+            .accept_container{
+                display: flex;
+                justify-content: center;
+                cursor: pointer;
+            }
+            .accept{
+                border: none;
+                background: none;
+                position: absolute;
+                border-radius: 15px;
+                height: 40px;
+                width: 80px;
+                border-bottom: 1px black solid;
+            }
+
+            .accept:focus{
+                outline: 0;
+            }
+            .accept_container:active{
+                .accept{
+                transform: translateY(2px);
+                border: none;
+                }
+            }
+
+            .card_field_container{
+                margin-top: 20px;
+                height: 90px;
+                overflow: hidden;
+            }
+
+            .card_description{
+                border: 1px solid rgb(221, 221, 221);
+                height: 80px;
+                background: rgb(white,0.3);
+                overflow: hidden;
+                transition: 1s;
+            }
+            .card_description:hover{
+                transition: 1s;
+                background: rgb(white,0.3);
+                height: 120px
+                    
+            }
+            .card_fields{
+                display: grid;
+                grid-template-columns: 40% 60%;
+                font-size: 12px;
+                :nth-child(1){
+                    display: inline;
+                    font-weight: bolder;
+                }
+                :nth-child(2){
+                    display: inline;
+                    border-bottom: 1px solid black;
+                    width: 90%
+                }
+                
+            }
+            .card_top{
+                display: grid;
+                grid-template-columns: 30% 65%;
+                border-bottom: 1px grey solid;
+                border-radius: 15px;
+            }
+            .card_title{
+                display: flex;
+                align-items: center;
+            }
+            .card_background{
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+            .card_requester{
+                margin-top: 5px;
+            }
+        }
+    }
+}

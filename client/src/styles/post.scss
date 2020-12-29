@@ -1,0 +1,117 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    .space{
+        position: relative;
+    }
+    .background{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-image: url("/image/86282.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position-y: -150px;
+        z-index: -1;
+        }
+    .inputs{
+        display: grid;
+        grid-template-columns: 20% 80%;
+
+        button{
+            position: absolute;
+            top:-10px;
+            right:20px;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border:none;
+            box-shadow: 2px 5px 5px rgb(black, 0.5);
+            background: none;
+            backdrop-filter: blur(6px);
+        }
+        button:focus {
+            outline:0;
+        }
+        button:active{
+            box-shadow: none;
+            transform: translateY(2px);
+        }
+        button{
+            position: absolute;
+            right:0;
+        }
+        div{
+            font-size: 20px;
+        }
+        input{
+            margin-left: 10px;
+            border:none;
+            border-bottom: 1px solid rgb(black,0.4);
+            font-size: 20px;
+            background: none;
+            width: 80%;
+
+            
+        }
+        input:focus{
+            outline: 0;
+        }
+    }
+    #fields{
+        position:relative;
+        .image{
+            position: absolute;
+            top:5px;
+            right: -15px;
+            border-radius: 50%;
+            height: 100px;
+            width : 100px;
+        }
+    }   
+
+    .fieldsContainer{
+        margin-top: 30px;
+        min-height: 200px;
+        border-radius: 25px;
+        background: rgb(white,0.3);
+        box-shadow: 0 15px 15px rgb(black,0.5);
+
+    }
+    .eachfield{
+        margin-top: 10px;
+        border: none;
+        background: none;
+        background: rgb(white,0.5);
+        box-shadow: 0 5px 5px rgb(black,0.5);
+        border-radius: 15px;
+        height: 30px;
+        font-size: 20px
+    }
+    .eachfield:focus{
+        outline: none;
+    }
+    .eachfield:active{
+        box-shadow: none;
+        transform: translateY(2px);
+    }
+    .tobackend{
+        font-size: 20px;
+        margin-top: 40px;
+        background: none;
+        border: none;
+        border-radius: 15px;
+        width: 20%;
+        height: 30px;
+        box-shadow: 0 10px 10px rgb(white,1);
+    }
+    .tobackend:active{
+        box-shadow:none;
+        transform: translateY(2px);
+    }
+    .tobackend:focus{
+        outline: 0;
+    }
+}

@@ -1,0 +1,132 @@
+:root{
+    --switch-bg-1: #FADA7E;
+    --switch-bg-2: #F5C2A4;
+    --switch-bg-3: #C5B2D9;
+    --switch-bg-4: #DCFAF4;
+    --switch-bg-5: #E0DB8B;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;1,500&display=swap');
+.login{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    // background: linear-gradient(130deg,var(--switch-bg-3),var(--switch-bg-2));
+    background-image: url("/image/4482024-01.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position-y: -150px;
+    height: 100vh;
+    overflow: hidden;
+
+    .container{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        background: white;
+        border-radius: 10px;
+
+        h1{ 
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-weight: bolder;
+            color: #ff6b4a;
+            padding-bottom: 20px;
+        }
+
+        .inputform{
+            padding: 0 40px;
+            box-sizing: border-box;
+
+            .text_field{
+                position: relative;
+                border-bottom: 1px solid rgb(171, 171, 171);
+                margin: 30px 0;
+
+                input{
+                    width:100%;
+                    padding: 0 5px;
+                    height:40px;
+                    font-size:16px;
+                    border: none;
+                    background: none;
+                    outline: none;
+                }
+
+                label{
+                    position: absolute;
+                    top:50%;
+                    left:5px;
+                    color: #fecec3;
+                    transform: translateY(-50%);
+                    font-size: 16px;
+                    pointer-events: none;
+                    transition: 0.5s;
+                }
+
+                span::before{
+                    content: '';
+                    position: absolute;
+                    top:40px;
+                    left:0px;
+                    width: 0%;
+                    height:2px;
+                    background: #ff6b4a;
+                    transition:0.5s;
+                }
+                
+                input:focus ~ label,
+                input:valid ~ label{
+                    top: -5px;
+                    color: #ff6b4a;
+                }
+
+                input:focus ~ span::before,
+                input:valid ~ span::before{
+                    top: -5px;
+                    color: #ff6b4a;
+                }
+            }
+
+            .login_button{
+                font-family: 'Montserrat', sans-serif;
+
+                width: 80%;
+                height: 50px;
+                border: 1px solid;
+                background: #ff6b4a;
+                border-radius: 25px;
+                font-size: 18px;
+                color: white;
+                font-weight: 700;
+                cursor: pointer;
+                outline: none;
+            }
+            .login_button:hover{
+                border-color: grey;
+                transition: 0.5s;
+            }
+            
+        }
+    }
+    .register_q{
+        margin: 30px 0;
+        text-align: center;
+        font-size: 16px;
+        color:  rgb(171, 171, 171);
+
+        a{
+            color: #ff6b4a;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.button_container{
+    text-align: center;
+  }

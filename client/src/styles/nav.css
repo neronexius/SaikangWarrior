@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;1,500&display=swap');
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+:after {
+	content: "";
+}
+.nav_all{
+    position: fixed;
+    top:0
+}
+section {
+  position: relative;
+  left: 100px;
+}
+/* 
+body {
+    padding: 100px 0;
+      background: lightblue;
+    color: white;
+    max-width:640px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+    line-height:1.4;
+    font-smoothing: anti-aliased;
+  } */
+
+.nav_container{
+    overflow: hidden;
+}
+
+
+
+
+nav {
+    float: left;
+	  position: relative;
+	  top: -15px;
+    left: -40px;
+    background: transparent;
+    transform: translateY(-100%);
+    transition: 2s
+    
+}
+
+nav ul {
+    text-align: center;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(-100%)
+    };
+    100%{
+        transform: translateY(100%)
+    }
+}
+
+nav ul li {
+	position: relative;
+  width: 70px;
+  cursor: pointer;
+  background: white;
+  border-radius: 5px;
+  border: #faf3e0 1px solid;
+	text-transform: uppercase;
+	transition:all .4s ease-out;
+}
+
+nav ul li:after {
+	position: absolute;
+	background: #ffbc3f;
+	color: white;
+	top:0;
+	left: 70px;
+	width: 70px; height: 100%;
+  opacity:.5;
+  border-radius: 5px;
+  transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+
+nav ul li:nth-child(1):after { 
+	content: "Home";
+	line-height: 60px;
+}
+nav ul li:nth-child(2):after { 
+	content: "Search";
+	line-height: 60px;
+}
+nav ul li:nth-child(3):after { 
+	content: "Post";
+	line-height: 85px;
+}
+nav ul li:nth-child(4):after {
+	content: "CART";
+	line-height: 70px;
+}
+
+nav ul li:nth-child(5):after {
+	content: "Request";
+	line-height: 70px;
+}
+
+nav ul li:nth-child(6):after {
+	content: "Task";
+	line-height: 70px;
+}
+
+ul li:nth-child(7):after {
+	content: "Logout";
+	line-height: 70px;
+}
+
+nav ul li:hover {
+	transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+nav ul li > div {
+	display: inline-block;
+	padding: 10px 0;
+	background: transparent;
+}
+
+nav ul li div { position: relative; }
+
+.nav_hider{
+    background:white;
+    height: 57px;
+    width: 70px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+.margin_top{
+  margin-top: 5px;
+}
+.fas,
+.fab{
+  color: #ffbc3f;
+  font-size: 40px;
+  text-align: center;
+}
