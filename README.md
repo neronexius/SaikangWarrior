@@ -25,9 +25,25 @@ the service completed, the transaction ends.
 ![](Screenshot4.png)
 User will first land on the welcome page and have an understanding how the app works.
 
+![](screen1.png)
+After the user has logged in, they will be able to see tasks they have requested to be completed. 
+They wil also see which user have picked up their task.
 
+![](screen2.png)
+Services can be bought through the "service page"
 
 ![](Screenshot3.png)
+If the service that user wants is not available, they can recommend to us!
+
+![](screen3.png)
+Fill up the necessary fields for the task. So the other user can have more details on the task.
+And you are done! You service will be fulfilled.
+
+![](screen4.png)
+If you want to earn some money pick up some task here!
+
+![](screen5.png)
+Once you are done with your task, click on completed and wait for approval.
 
 
 ## Planning and Development Process
